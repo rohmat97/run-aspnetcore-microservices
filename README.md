@@ -103,27 +103,27 @@ docker-compose -f docker-compose.yml -f docker-compose.override.yml up -d
 
 5. You can **launch microservices** as below urls:
 
-* **Catalog API -> localhos:8000/swagger/index.html**
-* **Basket API -> localhos:8001/swagger/index.html**
-* **Discount API -> localhos:8002/swagger/index.html**
-* **Ordering API -> localhos:8004/swagger/index.html**
-* **Shopping.Aggregator -> localhos:8005/swagger/index.html**
-* **API Gateway -> localhos:8010/Catalog**
-* **Rabbit Management Dashboard -> localhos:15672**   -- guest/guest
-* **Portainer -> localhos:9000**   -- admin/admin1234
-* **pgAdmin PostgreSQL -> localhos:5050**   -- admin@aspnetrun.com/admin1234
-* **Elasticsearch -> localhos:9200**
-* **Kibana -> localhos:5601**
+* **Catalog API -> http://localhost:8000/swagger/index.html**
+* **Basket API -> http://localhost:8001/swagger/index.html**
+* **Discount API -> http://localhost:8002/swagger/index.html**
+* **Ordering API -> http://localhost:8004/swagger/index.html**
+* **Shopping.Aggregator -> http://localhost:8005/swagger/index.html**
+* **API Gateway -> http://localhost:8010/Catalog**
+* **Rabbit Management Dashboard -> http://localhost:15672**   -- guest/guest
+* **Portainer -> http://localhost:9000**   -- admin/admin1234
+* **pgAdmin PostgreSQL -> http://localhost:5050**   -- admin@aspnetrun.com/admin1234
+* **Elasticsearch -> http://localhost:9200**
+* **Kibana -> http://localhost:5601**
 
-* **Web Status -> localhos:8007**
-* **Web UI -> localhos:8006**
+* **Web Status -> http://localhost:8007**
+* **Web UI -> http://localhost:8006**
 
-5. Launch localhos:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
-6. Launch localhos:8006 in your browser to view the Web UI. You can use Web project in order to **call microservices over API Gateway**. When you **checkout the basket** you can follow **queue record on RabbitMQ dashboard**.
+5. Launch http://localhost:8007 in your browser to view the Web Status. Make sure that every microservices are healthy.
+6. Launch http://localhost:8006 in your browser to view the Web UI. You can use Web project in order to **call microservices over API Gateway**. When you **checkout the basket** you can follow **queue record on RabbitMQ dashboard**.
 
 ![mainscreen2](https://user-images.githubusercontent.com/1147445/81381837-08226000-9116-11ea-9489-82645b8dbfc4.png)
 
->Note: If you are running this application in macOS then use `docker.for.mac.localhost` as DNS name in `.env` file and the above URLs instead of `host.docker.internal`.
+>Note: If you are running this application in macOS then use `docker.for.mac.http://localhostt` as DNS name in `.env` file and the above URLs instead of `host.docker.internal`.
 
 ## Authors
 
